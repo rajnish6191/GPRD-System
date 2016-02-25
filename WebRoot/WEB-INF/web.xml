@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  
+  
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InitServlet</servlet-name>
+    <servlet-class>com.citation.Util.InitServlet</servlet-class>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/config/system.properties</param-value>
+    </init-param>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>InitServlet</servlet-name>
+    <url-pattern>/initservlet</url-pattern>
+  </servlet-mapping>
+	
+	
+	<servlet>
+    
+    <servlet-name>RegisterAction</servlet-name>
+    <servlet-class>com.citation.Action.RegisterAction</servlet-class>
+  </servlet>
+  <servlet>
+    
+    <servlet-name>LoginAction</servlet-name>
+    <servlet-class>com.citation.Action.LoginAction</servlet-class>
+  </servlet>
+  <servlet>
+    
+    <servlet-name>ChangequestionAction</servlet-name>
+    <servlet-class>com.citation.Action.ChangequestionAction</servlet-class>
+  </servlet>
+  <servlet>
+    
+    <servlet-name>ChangePasswordAction</servlet-name>
+    <servlet-class>com.citation.Action.ChangePasswordAction</servlet-class>
+  </servlet>
+  
+	
+	<servlet>
+   <servlet-name>ChekUserAction</servlet-name>
+    <servlet-class>com.citation.Action.ChekUserAction</servlet-class>
+  </servlet>
+	
+	
+	<servlet>
+   <servlet-name>ViewUsersAction</servlet-name>
+    <servlet-class>com.citation.Action.ViewUsersAction</servlet-class>
+  </servlet>
+	
+	<servlet>
+   <servlet-name>LogoutAction</servlet-name>
+    <servlet-class>com.citation.Action.LogoutAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetSearchPageAction</servlet-name>
+    <servlet-class>com.citation.Action.GetSearchPageAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetLinksAction</servlet-name>
+    <servlet-class>com.citation.Action.GetLinksAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetLinksAction1</servlet-name>
+    <servlet-class>com.citation.Action.GetLinksAction1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetLinksAction2</servlet-name>
+    <servlet-class>com.citation.Action.GetLinksAction2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetLinkPathAction</servlet-name>
+    <servlet-class>com.citation.Action.GetLinkPathAction</servlet-class>
+  </servlet>
+<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WebpageAction</servlet-name>
+    <servlet-class>com.citation.Action.WebpageAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetDataAction</servlet-name>
+    <servlet-class>com.citation.Action.GetDataAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DataAction</servlet-name>
+    <servlet-class>com.citation.Action.DataAction</servlet-class>
+  </servlet>
+
+
+    <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetDataAction1</servlet-name>
+    <servlet-class>com.citation.Action.GetDataAction1</servlet-class>
+  </servlet>
+  
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetDataAction2</servlet-name>
+    <servlet-class>com.citation.Action.GetDataAction2</servlet-class>
+  </servlet>
+<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetPageAction</servlet-name>
+    <servlet-class>com.citation.Action.GetDataAction</servlet-class>
+  </servlet>
+
+  
+  
+  
+    <servlet>
+    <servlet-name>DeleteUserAction</servlet-name>
+    <servlet-class>com.citation.Action.DeleteUserAction</servlet-class>
+  </servlet>
+   
+   <servlet-mapping>
+	<servlet-name>DeleteUserAction</servlet-name>
+	<url-pattern>/DeleteUserAction</url-pattern>
+	</servlet-mapping>
+	
+  
+ <servlet>
+   <servlet-name>RecoverPasswordAction</servlet-name>
+    <servlet-class>com.citation.Action.RecoverPasswordAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>RecoverPasswordAction</servlet-name>
+    <url-pattern>/RecoverPasswordAction</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+   <servlet-name>UploadCategoryAction</servlet-name>
+    <servlet-class>com.citation.Action.UploadCategoryAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>UploadCategoryAction</servlet-name>
+    <url-pattern>/UploadCategoryAction</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+   <servlet-name>RetriveCategoryinfo</servlet-name>
+    <servlet-class>com.citation.Action.RetriveCategoryinfo</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>RetriveCategoryinfo</servlet-name>
+    <url-pattern>/RetriveCategoryinfo</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     <servlet-mapping>
+	<servlet-name>ChangePasswordAction</servlet-name>
+	<url-pattern>/ChangePasswordAction</url-pattern>
+	</servlet-mapping>
+  
+  
+  
+   
+	
+	
+	<servlet-mapping>
+	<servlet-name>RegisterAction</servlet-name>
+	<url-pattern>/RegisterAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>LoginAction</servlet-name>
+	<url-pattern>/LoginAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>LogoutAction</servlet-name>
+	<url-pattern>/LogoutAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>ChangequestionAction</servlet-name>
+	<url-pattern>/ChangequestionAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>ChekUserAction</servlet-name>
+	<url-pattern>/ChekUserAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>ViewUsersAction</servlet-name>
+	<url-pattern>/ViewUsersAction</url-pattern>
+	</servlet-mapping>
+
+	
+	  <servlet-mapping>
+    <servlet-name>GetSearchPageAction</servlet-name>
+    <url-pattern>/GetSearchPageAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetLinksAction</servlet-name>
+    <url-pattern>/GetLinksAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetLinksAction1</servlet-name>
+    <url-pattern>/GetLinksAction1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>GetLinksAction2</servlet-name>
+    <url-pattern>/GetLinksAction2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetLinkPathAction</servlet-name>
+    <url-pattern>/GetLinkPathAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WebpageAction</servlet-name>
+    <url-pattern>/WebpageAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetDataAction</servlet-name>
+    <url-pattern>/GetDataAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DataAction</servlet-name>
+    <url-pattern>/DataAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetDataAction1</servlet-name>
+    <url-pattern>/GetDataAction1</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>GetDataAction2</servlet-name>
+    <url-pattern>/GetDataAction2</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>GetPageAction</servlet-name>
+    <url-pattern>/GetPageAction</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>LoginForm.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
